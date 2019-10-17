@@ -7,8 +7,25 @@ Example 1
 [1,2,3,4,6,6,7,8,9,5,2,6,1,8] #=> {1:2, 2:2, 6:3, 8:2}"
 */
 
-function find_repeated() {
+function find_repeated(numbers) {
+  result = {};
+  test_map = {1:4, 5:6};
+  numbers.map(number => {
+    if (result[number]) {
+      result[number] += 1;
+    } else {
+      result[number] = 1;
+    }
+  })
 
+  duplicates = {};
+  Object.keys(result).map(key => {
+    if (result[key] > 1) {
+      duplicates[key] = result[key];
+    }
+  })
+
+  return duplicates;
 }
 
 module.exports = find_repeated;
