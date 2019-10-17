@@ -11,6 +11,10 @@ describe ("testing fibonacci function", () => {
   });
 
   it("expected sequence should match", () => {
+    fibo(2).should.be.equal([0, 1]);
+  });
+
+  it("expected sequence should match", () => {
     fibo(3).should.be.equal([0, 1, 1]);
   });
 });
