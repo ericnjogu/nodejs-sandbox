@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-sandbox",
+  "version": "1.0.0",
+  "description": "trying out several nodejs recipes",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/**/*test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kunadawa/nodejs-sandbox.git"
+  },
+  "author": "Eric Njogu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kunadawa/nodejs-sandbox/issues"
+  },
+  "homepage": "https://github.com/kunadawa/nodejs-sandbox#readme"
+}
