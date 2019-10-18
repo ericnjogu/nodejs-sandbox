@@ -19,11 +19,11 @@ function find_repeated(numbers) {
   })
 
   duplicates = {};
-  Object.keys(result).map(key => {
-    if (result[key] > 1) {
-      duplicates[key] = result[key];
+  for (let [number, count] of Object.entries(result)) {
+    if (count > 1) {
+      duplicates[number] = count;
     }
-  })
+  }
 
   return duplicates;
 }
